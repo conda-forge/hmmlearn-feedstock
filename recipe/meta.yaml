@@ -10,7 +10,7 @@ source:
   sha256: 694646f8302bc6402925a4b6892f3a5ccede06d25f22157c18cfbdecdb748361
 
 build:
-  number: 0
+  number: 1000
   skip: True  # [py37]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "  # [unix]
   script: "{{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt "  # [win]
