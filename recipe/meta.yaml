@@ -25,6 +25,7 @@ requirements:
     - numpy
     - cython
     - setuptools
+    - setuptools_scm
   run:
     - python
     - scikit-learn >=0.16
