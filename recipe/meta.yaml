@@ -42,7 +42,7 @@ about:
   home: https://github.com/hmmlearn/hmmlearn
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE 
+  license_file: LICENSE.txt
   summary: "Hidden Markov Models in Python with scikit-learn like API."
   doc_url: https://hmmlearn.readthedocs.io/en/stable/
   dev_url: https://hmmlearn.readthedocs.io/en/latest/
