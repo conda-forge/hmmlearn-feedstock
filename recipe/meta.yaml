@@ -1,5 +1,5 @@
 {% set name = "hmmlearn" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d43f5b25f9019ef5d01914d0972a5fa0594e82ab75d2c6aec26d682e47bd553c
+  sha256: 0492fe138bf6e2b95aa1efadc5124fa02ab01ba75451cd67dcc5f2a2fb282c20
 
 build:
-  number: 1000
+  number: 0
   script: 
     - {{ PYTHON }} setup.py build_ext
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [unix]
@@ -25,6 +25,7 @@ requirements:
     - numpy
     - cython
     - setuptools
+    - setuptools_scm
   run:
     - python
     - scikit-learn >=0.16
@@ -41,7 +42,7 @@ about:
   home: https://github.com/hmmlearn/hmmlearn
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE 
+  license_file: LICENSE.txt
   summary: "Hidden Markov Models in Python with scikit-learn like API."
   doc_url: https://hmmlearn.readthedocs.io/en/stable/
   dev_url: https://hmmlearn.readthedocs.io/en/latest/
