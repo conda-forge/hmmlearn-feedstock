@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: True  # [py<35]
   script: 
     - {{ PYTHON }} setup.py build_ext
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv  # [unix]
@@ -21,13 +22,13 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python >=3.5
+    - python
     - numpy
     - cython
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.5
+    - python
     - scikit-learn >=0.16
     - {{ pin_compatible('numpy') }}
     - scipy >=0.16.0
