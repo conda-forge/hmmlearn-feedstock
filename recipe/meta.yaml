@@ -10,7 +10,7 @@ source:
   sha256: 8003d5dc55612de8016156abdc7aa1dd995abc2431adb1ef33dd84a6d29e56bf
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<35]
   script: 
     - {{ PYTHON }} setup.py build_ext
@@ -33,7 +33,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - scipy >=0.16.0
     - setuptools
-    - matplotlib >=1.1.1
+    - matplotlib-base >=1.1.1
 
 test:
   imports:
