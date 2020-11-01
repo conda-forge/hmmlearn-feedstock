@@ -10,7 +10,7 @@ source:
   sha256: 0f5cb598a7494b9703c6188246dc89e529d46cbb6700eca70cc895085f0b3cc3
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<35]
   script:
     - {{ PYTHON }} setup.py build_ext
