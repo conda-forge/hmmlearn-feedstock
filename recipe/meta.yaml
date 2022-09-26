@@ -1,5 +1,5 @@
 {% set name = "hmmlearn" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b4b2720f27af75da9367ab4d90dcb00f38da33168df6d917f9ec5de6670f6e1
+  sha256: 696931e3dce6801cc9b78c629f543061dd7eb67a71155b03d1b39ea172a2a5f9
 
 build:
   number: 0
